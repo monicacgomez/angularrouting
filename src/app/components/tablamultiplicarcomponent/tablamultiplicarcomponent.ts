@@ -5,7 +5,9 @@ import { ActivatedRoute, Params } from '@angular/router';
   selector: 'app-tabla-multiplicar-component',
   standalone: false,
   templateUrl: './tablamultiplicarcomponent.html',
+  styleUrl: './tablamultiplicarcomponent.css',
 })
+
 export class TablaMultiplicarComponent implements OnInit {
   public numeros!: Array<number>;
 

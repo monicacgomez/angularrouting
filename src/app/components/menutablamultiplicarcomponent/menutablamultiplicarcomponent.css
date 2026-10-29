@@ -1,3 +1,43 @@
-ul#menu li {
-    display: inline
+.menu-tablas {
+  padding: 20px 0 5px;
+}
+
+#menu-tablas {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  align-items: flex-start;
+  gap: 16px;
+
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+#menu-tablas li {
+  margin: 0;
+  padding: 0;
+}
+
+#menu-tablas a {
+  color: #b11156;
+  font-size: 15px;
+  font-weight: 500;
+
+  text-decoration: underline;
+  text-underline-offset: 4px;
+  text-decoration-color: #e5a0bd;
+
+  transition: color 0.2s ease;
+}
+
+#menu-tablas a:hover {
+  color: #7d0b3d;
+  text-decoration-color: #7d0b3d;
+}
+
+#menu-tablas a:focus-visible {
+  outline: 2px solid #b11156;
+  outline-offset: 3px;
+  border-radius: 2px;
 }

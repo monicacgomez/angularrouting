@@ -1,0 +1,64 @@
+.menu-nav {
+  padding: 20px 0;
+}
+
+#menu {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  align-items: flex-start;
+  gap: 12px;
+
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+#menu li {
+  margin: 0;
+  padding: 0;
+}
+
+#menu a {
+  display: inline-block;
+  padding: 10px 20px;
+
+  color: #b11156;
+  background-color: #fff0f5;
+
+  border: 1px solid #b11156;
+  border-radius: 10px;
+
+  text-decoration: none;
+  font-size: 15px;
+  font-weight: 600;
+
+  transition: all 0.25s ease;
+}
+
+/* Efecto al pasar el ratón */
+#menu a:hover {
+  color: #ffffff;
+  background-color: #b11156;
+  box-shadow: 0 5px 12px rgba(177, 17, 86, 0.25);
+  transform: translateY(-3px);
+}
+
+/* Efecto al pulsar */
+#menu a:active {
+  transform: translateY(0);
+  box-shadow: none;
+}
+
+/* Adaptación a móviles */
+@media (max-width: 480px) {
+  #menu {
+    gap: 8px;
+  }
+
+  #menu a {
+    padding: 9px 14px;
+    font-size: 14px;
+  }
+}
+

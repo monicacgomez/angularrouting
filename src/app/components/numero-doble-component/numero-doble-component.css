@@ -1,0 +1,124 @@
+.doble-pagina {
+  padding: 10px 0 24px;
+  font-family: Arial, sans-serif;
+  text-align: left;
+  color: #633047;
+}
+
+.doble-titulo {
+  margin: 0 0 18px;
+  color: #633047;
+  font-size: 24px;
+  font-weight: 700;
+}
+
+/* Enlaces Doble 5, 6 y 7 */
+.doble-enlaces {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 18px;
+  margin-bottom: 22px;
+}
+
+.doble-enlaces a {
+  color: #b11156;
+  font-size: 13px;
+  font-weight: 500;
+  text-decoration: underline;
+  text-decoration-color: #e5a0bd;
+  text-underline-offset: 4px;
+  transition: color 0.2s ease;
+}
+
+.doble-enlaces a:hover {
+  color: #7d0b3d;
+  text-decoration-color: #7d0b3d;
+}
+
+/* Grupo de botones */
+.doble-acciones {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-bottom: 24px;
+}
+
+.doble-acciones button {
+  padding: 9px 15px;
+  border-radius: 9px;
+  font-size: 13px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+/* Go to home */
+.boton-home {
+  color: #ffffff;
+  background-color: #633047;
+  border: 1px solid #633047;
+}
+
+.boton-home:hover {
+  background-color: #482135;
+  border-color: #482135;
+  transform: translateY(-2px);
+}
+
+/* Botones de doble */
+.boton-doble {
+  color: #ffffff;
+  background-color: #cf6a95;
+  border: 1px solid #cf6a95;
+}
+
+.boton-doble:hover {
+  background-color: #b84d7c;
+  border-color: #b84d7c;
+  box-shadow: 0 4px 10px rgba(177, 17, 86, 0.18);
+  transform: translateY(-2px);
+}
+
+/* Resultado normal */
+.doble-resultado {
+  max-width: 480px;
+  padding: 16px 18px;
+  background-color: #f1eafb;
+  border-left: 3px solid #b9a0dc;
+  border-radius: 5px;
+}
+
+.doble-resultado h2 {
+  margin: 0;
+  color: #76618f;
+  font-size: 15px;
+  font-weight: 500;
+  line-height: 1.7;
+}
+
+.numero-resultado {
+  color: #8d70b2;
+  font-size: 18px;
+  font-weight: 700;
+}
+
+/* Mensaje sin parámetro */
+.doble-resultado:has(.mensaje-error) {
+  background-color: #80649a;
+  border-left-color: #59416f;
+}
+
+.doble-resultado .mensaje-error {
+  color: #ffffff;
+}
+
+/* Adaptación a móviles */
+@media (max-width: 480px) {
+  .doble-acciones {
+    gap: 8px;
+  }
+
+  .doble-acciones button {
+    padding: 9px 12px;
+  }
+}

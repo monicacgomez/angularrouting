@@ -1,33 +1,45 @@
-<h1> Doble parámetros </h1>
+<section class="doble-pagina">
 
-@for (item of [].constructor(3); track $index) {
-    <a [routerLink]="['/doble', $index + 5]">
-        Doble {{$index + 5}}
-    </a>
-}
+  <h1 class="doble-titulo">Doble parámetros</h1>
 
-<button (click)="goToHome()">
-    Go to home
-</button>
+  <nav class="doble-enlaces">
+    @for (item of [].constructor(3); track $index) {
+      <a [routerLink]="['/doble', $index + 5]">
+        Doble {{ $index + 5 }}
+      </a>
+    }
+  </nav>
 
-<button (click)="redirect (88)">
-    Doble 88
-</button>
+  <div class="doble-acciones">
+    <button class="boton-home" (click)="goToHome()">
+      Go to home
+    </button>
 
-<button (click)="redirect (99)">
-    Doble 99
-</button>
+    <button class="boton-doble" (click)="redirect(88)">
+      Doble 88
+    </button>
 
-<button (click)="redirect (997)">
-    Doble 997
-</button>
+    <button class="boton-doble" (click)="redirect(99)">
+      Doble 99
+    </button>
 
-@if (numero) {
-    <h2 style="color: #6d6943">
-        El doble del número {{numero}} es {{doble}}
-    </h2>
-}@else{
-    <h2 style="color:#700143">
+    <button class="boton-doble" (click)="redirect(997)">
+      Doble 997
+    </button>
+  </div>
+
+  <div class="doble-resultado">
+    @if (numero) {
+      <h2>
+        El doble del número {{ numero }} es
+        <span class="numero-resultado">{{ doble }}</span>
+      </h2>
+    } @else {
+      <h2 class="mensaje-error">
         No hemos recibido el parámetro
-    </h2>
-}
+      </h2>
+    }
+  </div>
+
+</section>
+
